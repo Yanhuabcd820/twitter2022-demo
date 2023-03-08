@@ -59,7 +59,7 @@ export default {
   methods: {
     async infiniteHandler($state){
       try {
-        const response = await axios.get(`https://damp-wave-52946.herokuapp.com/api/tweets?page=${this.page}&limit=3`, { headers: { Authorization: `Bearer ${getToken()}`}})
+        const response = await axios.get(`http://13.113.156.193/api/tweets?page=${this.page}&limit=3`, { headers: { Authorization: `Bearer ${getToken()}`}})
 
         console.log('response', response)
         let sometweets = response.data.data.tweets

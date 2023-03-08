@@ -93,7 +93,7 @@ export default {
         if(error.message==="Network Error"){
           Toast.fire({
             icon: "error",
-            title: "可能是heroku斷掉了",
+            title: "可能是aws斷掉了",
           });
           return
         }
